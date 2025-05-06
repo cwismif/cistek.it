@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Christopher Smith
+% Website: https://github.com/cwismif/public-documents
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\Large Christopher Smith} & Email: \href{mailto:cistek.it@gmail.com}{cistek.it@gmail.com}\\
+  \href{http://github.com/cwismif/cistek.it}{http://github.com/cwismif/cistek.it} & Mobile: 079-7485-1339 \\
+  \href{http://linkedin.com/in/cistek}{http://linkedin.com/in/cistek} \\
+\end{tabular*}
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sainsburys Plc}{Holborn, London, UK}
+      {DevOps Java Engineer}{Oct 2023 - Apr 2025}
+      \resumeItemListStart
+        \resumeItem{Platform migration project}
+          {Led migration of 30 microservices between two Internal Developer Platforms (IDP) based on Kubernetes.}
+        \resumeItem{Migration benefits}
+          {The IDP being migrated from was decommissioned and saved the company \$30,000 a year in AWS costs. 2 senior engineers saved hundreds of working hours a year.}
+        \resumeItem{Continuous Integration/Deployment migration} 
+          {Led the CI / CD transformation from Jenkins to GitHub Actions, reducing the code line count by 80\%.}
+        \resumeItem{Upgraded Primary Order Database} 
+          {I planned and implemented an upgrade from AWS Aurora 2 (MySQL 5) to 3 (MySQL 8) the 'Master of Record' database for customer orders.  Using a blue/green deployment strategy meant there was no downtime, nor data loss/corruption}.
+      \resumeItemListEnd
+    \resumeSubheading
+      {Ford UK}{London, UK}
+      {Full-stack Software Developer}{Aug 2023 - Sep 2024}
+      \resumeItemListStart
+        \resumeItem{Refactoring as part of the feature development}
+          {Advocated for clean code, refactoring while developing features to decrease tech debt incrementally.}
+        \resumeItem{BDD using Test Con}
+          {Pushed for BDD integration testing as part of the local build.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Sky}{London, UK}
+      {Senior Software Engineer}{Mar 2020 - Sep 2020}
+      \resumeItemListStart
+        \resumeItem{Cloud Engineering using Iac}
+          {Advocated for best practices, making use of official public modules, tflint, tfsec scans. Frequently needed to assist other engineers with Terraform and AWS issues.}
+        \resumeItem{Kotlin non-blocking Performance}
+          {Decreased latencies by 80-50\% by using Kotlin and non-blocking I/O libraries.}
+      \resumeItemListEnd
+          \resumeSubheading
+      {Royal Bank of Scotland}{London, UK}
+      {Software Engineer}{Sep 2018 - Feb 2020}
+      \resumeItemListStart
+        \resumeItem{Ownership over microservice}
+          {Led the design and implementation of a microservice that secured 6 million customer transactions per day.}
+        \resumeItem{Designed and implemented Event Driven Java frameworks}
+          {Decreased resource consumption by ~50\% by using Vert.x and non-blocking I/O.}
+      \resumeItemListEnd
+          \resumeSubheading
+      {Sky}{London, UK}
+      {Software Engineer}{Nov 2017 - Sep 2018}
+      \resumeItemListStart
+        \resumeItem{RatPack - a non-blocking HTTP Server}
+          {Reduced resource consumption and decreased latency by ~50\% by using non-blocking I/O that doesn't require a single OS thread to handle a single request.  This means many more requests can be served concurrently but with less context switching of those OS threads}
+        \resumeItem{Designed and scaled our infrastructure}
+          { Using Terraform and IaC - making use of system design patterns for fault-tolerance. Used circuit breakers (Netflix Hystrix) to limit the blast radius of failures and gracefully handle downstream error}
+      \resumeItemListEnd
+          \resumeSubheading
+      {Amalytics Ltd}{London, UK}
+      {Software Engineer}{Mar 2016 - Nov 2017}
+      \resumeItemListStart
+        \resumeItem{A small startup of 3-5 engineers}
+          {A single MVP was being developed that ingested accountancy data.}
+        \resumeItem{FinOps Role}
+          {Reduced AWS costs by ~75\% by scheduling pausing or otherwise disabling services not in use}
+        \resumeItem{DevOps Role}
+          {Researched, designed and implemented a few Jenkins nodes for CI.}
+        \resumeItem{Performance Tuning}
+          {Used JVM profiling tools such as JMeter and Java Flight Recorder to reduce computation time by ~95\% (caused by frequent GC).  Remedies were to prefer primitives over Objects, reuse Objects via Object pooling, not using libraries that result in the heap growing in size.}
+      \resumeItemListEnd
+      \resumeSubheading
+      {British Airways}{London, UK}
+      {Junior Full-stack Software Developer}{Mar 2013 - Mar 2015}
+      \resumeItemListStart
+        \resumeItem{Implemented and ELK stack}
+          {Used to determine application user information and usage patterns.}
+        \resumeItem{Failover architecture}
+          {Two identical stacks in 2 different data centres - both functioned independently but a LB would perform health checks and forward traffic to a healthy stack.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+  
+%-----------EDUCATION-----------------
+\section{Education}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {University of Portsmouth}{Portsmouth, UK}
+        {Master of Pharmacy}{Oct 2003 - Jun 2008}
+    \resumeSubHeadingListEnd
+    
+\section{Certifications}
+    \resumeSubHeadingListStart
+        \resumeSubheading
+        {Oracle Certified Professional Java SE 8 Programmer II}{Oracle}
+        {Core Java SE 8 | Streams API | Concurrency | JDBC | Java NIO.2 API}{Aug 2017}
+        \resumeSubheading
+        {AWS Certified Solution Architect Associate}{AWS}
+        {Core: EC2,EBS,S3,RDS,DynamoDB | Networking: VPC,LB,Routing,Route53 | Serverless: Lambdas}{Jan 2016}
+    \resumeSubHeadingListEnd
+    
+%-----------PROGRAMMING-----------------
+\section{Programming}
+  \resumeSubHeadingListStart
+    \resumeSubItem{BDD}
+      { Prefer to write microservice black-box tests. It helps me identify any gaps in my understanding of the requirements early. }
+    \resumeSubItem{TDD}
+      { Write Test, make it fail, write just enough code make it pass, refactor. This has great advantages in:
+        \begin{itemize}
+          \item Granting fast feedback and comprehensive regression tests
+          \item Influencing internal design
+          \item Keeping code focused and concise
+        \end{itemize}
+        Although it can couple the tests with the implementation, which require lots of changes to unit tests when refactoring. Unit testing the abstractions helps decouple and makes refactoring require fewer changes. It also promotes cleaner abstractions in the production code}
+    \resumeSubItem{Design Patterns}
+      { I use the factory method, Builder, Observer and Strategy patterns most regularly}
+    \resumeSubItem{Languages}
+      {Java (Spring, Hibernate, RxJava), Kotlin (ktor, http4k), Javascript(AngularJS, node.JS), Python \& Bash (for scripting).}
+  \resumeSubHeadingListEnd
+%--------DEVOPS------------
+\section{DevOps}
+  \resumeSubHeadingListStart
+      \resumeSubItem{The need for distributed system design}
+      { Building in a container is portable and reproduces the CI environments.
+        Runtime dependencies a database instance, MQ, LocalStack, etc can be hosted in a container for any testing. }
+    \resumeSubItem{Execute the build on your machine as reasonably possible}
+      { shift left when running build stages - lint, run unit, integration and BDD tests with the aid of containerised dependencies, run security scans, and static code analysis, maybe even performance tests.  Build and push the image to CI alongside config. }
+    \resumeSubItem{Internal Developer Platforms (IDP)}
+      { Reduce App team workload. Enforce standardised, good practices, reduce duplication of work, reduce the cognitive load on the App team }
+   \item{
+     \textbf{Languages}{: Python, Bash, Java, Groovy}
+     \hfill
+     \textbf{Technologies}{: AWS, Terraform, Docker, Kubernetes, GitHub Actions}
+   }
+ \resumeSubHeadingListEnd
+%--------SYSTEM DESIGN------------
+\section{System Design}
+  \resumeSubHeadingListStart
+      \resumeSubItem{Why the complexity?}
+      {The system design has to meet the non-functional requirements (NFRs) of an application. IT system outages can cause huge disruption.  If the systems we depend on are so important, they must be: Scalable, Highly available, Reliable, Fault-tolerant}
+      \resumeSubItem{Types of Scaling}
+      {Horizontal scaling: Adding more servers to the system. Systems must maintain performance through horizontal scaling.\newline
+      Vertical scaling: Simpler but limited by CPU and memory of even the most powerful machines.}
+      \resumeSubItem{Databases}
+      {Analysis of data storage and access patterns determines database technology choice:
+        \begin{itemize}
+          \item Relational databases (eg. MySQL): ACID compliant but more complex to scale horizontally
+          \item NoSQL databases: More flexible schema and easier horizontal scaling, but with various trade-offs
+        \end{itemize}}
+      \resumeSubItem{Caching}
+      {There many variants of cache and many places they can be used.  Access patterns and data consistency are considerations.}
+      \resumeSubItem{Load balancers}
+      {Two types exist: L4 LBs are Faster but have less information for forwarding decisions and L7 LBs are Slower but can use client request details in decisions}
+      \resumeSubItem{Message Queues}
+      {Provides two key benefits: Improves performance through asynchronous workload delegation adds system resilience by buffering temporary processing fluctuations and allowing the message to be replayed.}
+      \resumeSubItem{Content Delivery Networks}
+      {Improves performance by serving data from geographically closer servers to users}
+      \resumeSubItem{Pub/Sub}
+      {A single push event to a topic/channel fans out data to multiple consumers}
+  \resumeSubHeadingListEnd
+\end{document}
