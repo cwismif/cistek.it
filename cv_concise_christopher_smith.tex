@@ -1,0 +1,140 @@
+%-------------------------
+% Resume in Latex
+% Author : Christopher Smith
+% Website: https://github.com/cwismif/public-documents
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.375in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    #1 \vspace{-2pt}
+  }
+}
+% This command defines a custom LaTeX command called \resumeItem that takes one parameter:
+% #1: The parameter contains the item text to be displayed
+% The command creates a bulleted item with small text, displays the parameter in small font,
+% and adds negative vertical space (-4pt) to reduce the gap between consecutive items
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{#2} \\
+      \textit{\small#3} & \textit{\small #4}
+    \end{tabular*}\vspace{-8pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\item\small{#1}\vspace{-1pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\huge Christopher Smith} & Email: \href{mailto:cistek.it@gmail.com}{\color{blue}\underline{cistek.it@gmail.com}}\\
+  \href{https://github.com/cwismif/cistek.it}{\color{blue}\underline{https://github.com/cwismif/cistek.it}} & Mobile: 07974851339 \\
+  \href{https://linkedin.com/in/cistek}{\color{blue}\underline{https://linkedin.com/in/cistek}} \\
+\end{tabular*}
+
+%----------SUMMARY-----------------
+\section*{Summary}
+\small Versatile software engineer with over 11 years of experience developing applications used by millions. Passionate about automation and delivering high-quality, well-tested solutions.\\
+\textbf{Skills:} AWS, Terraform, CI/CD, Java, GitHub Actions, Jenkins, Vert.x, AngularJS, GraphQL, BDD, Redis, Microservices, System Design, Cloud Architecture, IaC
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+  \resumeSubheading{Sainsburys Plc}{Holborn, London, UK}{DevOps Java Engineer}{Oct 2022 - Apr 2025}
+    \resumeItemListStart
+      \resumeItem{Migrated 30 microservices and other tooling between Internal Developer Platforms}
+      \resumeItem{The migration saved the company, annually, ~ \$50,000 and two senior engineers saved hundreds of working hours}
+      \resumeItem{Two senior engineers saved hundreds of working hours a year}
+      \resumeItem{Led the CI/CD transformation from Jenkins to GitHub Actions, reducing the code line count by 80\%}
+      \resumeItem{Upgraded the 'Single Source of Truth' database for customer orders with no downtime or data corruption}
+    \resumeItemListEnd
+    \resumeSubheading{Ford UK}{London, UK}{Full stack engineer}{Aug 2021 - Sep 2022}
+      \resumeItemListStart
+        \resumeItem{Advocated and montored others in managing tech debt with clean code and increment refactoring}
+        \resumeItem{Planned and implemented BDD testing of a service prior to remote CI}
+        \resumeItem{Persuaded management and worked alongside another engineer to implement a graphQL API}
+      \resumeItemListEnd
+      \resumeSubheading{Career break}{Manchester, UK}{Caring for family members}{Sep 2020 - Aug 2021}
+      \resumeSubheading{Sky}{London, UK}{Senior Software Engineer}{Mar 2020 - Sep 2020}
+      \resumeItemListStart
+        \resumeItem{System Design implemented by IaC and Terraform for scaling and fault-tolerance}
+        \resumeItem{Minimised latency by 80\% and compute use by 50\% by using non-blocking I/O}
+      \resumeItemListEnd
+      \resumeSubheading{Royal Bank of Scotland}{London, UK}{Software Engineer}{Sep 2018 - Feb 2020}
+      \resumeItemListStart
+        \resumeItem{Led the design and implementation of a service that verified around 6 million transactions daily}
+        \resumeItem{Used Vert.x to use async I/O which reduced resource costs by ~50\%}
+      \resumeItemListEnd
+      \resumeSubheading{Sky}{London, UK}{Software Engineer}{Nov 2017 - Sep 2018}
+      \resumeItemListStart
+        \resumeItem{Designed a cloud based system that was scalable, available and fault-tolerant}
+        \resumeItem{Used a non-blocking HTTP library (RatPack) which reduced resource costs by ~50\% and improved latency}
+      \resumeItemListEnd
+      \resumeSubheading{Amalytics Ltd}{London, UK}{Software Engineer}{Mar 2016 - Nov 2017}
+      \resumeItemListStart
+        \resumeItem{Reduced AWS costs by ~75\% by optimising cloud resources}
+        \resumeItem{Researched, designed and implemented a CI pipeline using Jenkins}
+        \resumeItem{Uncovered major bottlenecks that reduced processing duration by 95\%}
+      \resumeItemListEnd
+      \resumeSubheading{British Airways}{London, UK}{Junior Software Engineer}{Mar 2014 - Mar 2014}
+      \resumeItemListStart
+        \resumeItem{Involved in designing a failover application stack}
+        \resumeItem{Implmented widgets and features using AngularJS, Java and Redis}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+%-----------EDUCATION & CERTIFICATION -----------------
+\section{Education \& Certifications}
+        \resumeSubItem{University of Portsmouth, Portsmouth, UK | Master of Pharmacy (2:2) | Oct 2003 - Jun 2008}
+        \resumeSubItem{AWS Certified Advanced Networking - Specialty (In Progress)}
+        \resumeSubItem{OCP Java SE 8 Programmer II | \small Credential ID OC1671391 - Oracle | 2017}
+        \resumeSubItem{AWS Certified Solution Architect Associate | \small AWS | 2016}
+\end{document}
