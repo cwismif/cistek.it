@@ -72,34 +72,46 @@
 \begin{document}
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-  \textbf{\Large Christopher Smith} & Email: \href{mailto:cistek.it@gmail.com}{cistek.it@gmail.com}\\
-  \href{http://github.com/cwismif/cistek.it}{http://github.com/cwismif/cistek.it} & Mobile: 079-7485-1339 \\
-  \href{http://linkedin.com/in/cistek}{http://linkedin.com/in/cistek} \\
+  \textbf{\huge Christopher Smith} & Email: \href{mailto:cistek.it@gmail.com}{\color{blue}\underline{cistek.it@gmail.com}}\\
+  \href{https://github.com/cwismif/cistek.it}{\color{blue}\underline{https://github.com/cwismif/cistek.it}} & Mobile: 07974851339 \\
+  \href{https://linkedin.com/in/cistek}{\color{blue}\underline{https://linkedin.com/in/cistek}} \\
 \end{tabular*}
+
+%----------SUMMARY-----------------
+\section*{Summary}
+Versatile software engineer with over 11 years of experience developing applications used by millions. Specialised in AWS, Terraform, CI/CD and delivering high-quality, well-tested solutions.  
+
 %-----------EXPERIENCE-----------------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Sainsburys Plc}{Holborn, London, UK}
-      {DevOps Java Engineer}{Oct 2023 - Apr 2025}
+      {DevOps Java Engineer}{Oct 2022 - Apr 2025}
       \resumeItemListStart
         \resumeItem{Platform migration project}
-          {Led migration of 30 microservices between two Internal Developer Platforms (IDP) based on Kubernetes.}
+          {Led migration of 30 microservices between two Internal Developer Platforms based on Kubernetes.}
         \resumeItem{Migration benefits}
-          {The IDP being migrated from was decommissioned and saved the company \$30,000 a year in AWS costs. 2 senior engineers saved hundreds of working hours a year.}
+          {The Internal Developer Platforms being migrated from was decommissioned and saved the company \$30,000 a year in AWS costs. 2 senior engineers saved hundreds of working hours a year.}
         \resumeItem{Continuous Integration/Deployment migration} 
-          {Led the CI / CD transformation from Jenkins to GitHub Actions, reducing the code line count by 80\%.}
+          {Led the CI/CD transformation from Jenkins to GitHub Actions, reducing the code line count by 80\%.}
         \resumeItem{Upgraded Primary Order Database} 
-          {I planned and implemented an upgrade from AWS Aurora 2 (MySQL 5) to 3 (MySQL 8) the 'Master of Record' database for customer orders.  Using a blue/green deployment strategy meant there was no downtime, nor data loss/corruption}.
+          {Planned and implemented an upgrade from AWS Aurora 2 (MySQL 5) to 3 (MySQL 8) the 'Single Source of Truth' database for customer orders.  Using a blue/green deployment strategy meant there was no downtime, nor data loss/corruption}.
       \resumeItemListEnd
     \resumeSubheading
       {Ford UK}{London, UK}
-      {Full-stack Software Developer}{Aug 2023 - Sep 2024}
+      {Full-stack Software Developer}{Aug 2021 - Sep 2022}
       \resumeItemListStart
         \resumeItem{Refactoring as part of the feature development}
           {Advocated for clean code, refactoring while developing features to decrease tech debt incrementally.}
         \resumeItem{BDD using Test Con}
           {Pushed for BDD integration testing as part of the local build.}
+      \resumeItemListEnd
+    \resumeSubheading
+      {Career Break}{Remote}
+      {Personal Development}{Sep 2020 - Aug 2021}
+      \resumeItemListStart
+        \resumeItem{Family Responsibilities / Personal Development}
+          {Took time to support family members requiring care.}
       \resumeItemListEnd
     \resumeSubheading
       {Sky}{London, UK}
@@ -143,7 +155,7 @@
       \resumeItemListEnd
       \resumeSubheading
       {British Airways}{London, UK}
-      {Junior Full-stack Software Developer}{Mar 2013 - Mar 2015}
+      {Junior Full-stack Software Developer}{Mar 2014 - Mar 2016}
       \resumeItemListStart
         \resumeItem{Implemented and ELK stack}
           {Used to determine application user information and usage patterns.}
@@ -151,82 +163,77 @@
           {Two identical stacks in 2 different data centres - both functioned independently but a LB would perform health checks and forward traffic to a healthy stack.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-  
 %-----------EDUCATION-----------------
 \section{Education}
     \resumeSubHeadingListStart
         \resumeSubheading
         {University of Portsmouth}{Portsmouth, UK}
-        {Master of Pharmacy}{Oct 2003 - Jun 2008}
+        {Master of Pharmacy (2:2)}{Oct 2003 - Jun 2008}
     \resumeSubHeadingListEnd
-    
 \section{Certifications}
     \resumeSubHeadingListStart
         \resumeSubheading
-        {Oracle Certified Professional Java SE 8 Programmer II}{Oracle}
-        {Core Java SE 8 | Streams API | Concurrency | JDBC | Java NIO.2 API}{Aug 2017}
+        {AWS Certified Advanced Networking - Specialty (In Progress)}{AWS}
+        {\textbf{Core:} VPC, Transit Gateway, Direct Connect, Hybrid Networking, Route 53, AWS WAF}{Expected Autumn 2025}
+        \resumeSubheading
+        {Oracle Certified Professional, Java SE 8 Programmer II}{\small Credential ID OC1671391 - Oracle}
+        {Core Java SE 8 • Streams API • Concurrency • JDBC • Java NIO.2 API}{Aug 2017}
         \resumeSubheading
         {AWS Certified Solution Architect Associate}{AWS}
-        {Core: EC2,EBS,S3,RDS,DynamoDB | Networking: VPC,LB,Routing,Route53 | Serverless: Lambdas}{Jan 2016}
+        {\textbf{Core:} EC2, EBS, S3, RDS, DynamoDB • \textbf{Networking:} VPC, LB, Routing, Route53}{Jan 2016}
     \resumeSubHeadingListEnd
-    
 %-----------PROGRAMMING-----------------
 \section{Programming}
   \resumeSubHeadingListStart
-    \resumeSubItem{BDD}
-      { Prefer to write microservice black-box tests. It helps me identify any gaps in my understanding of the requirements early. }
-    \resumeSubItem{TDD}
-      { Write Test, make it fail, write just enough code make it pass, refactor. This has great advantages in:
-        \begin{itemize}
-          \item Granting fast feedback and comprehensive regression tests
-          \item Influencing internal design
-          \item Keeping code focused and concise
-        \end{itemize}
-        Although it can couple the tests with the implementation, which require lots of changes to unit tests when refactoring. Unit testing the abstractions helps decouple and makes refactoring require fewer changes. It also promotes cleaner abstractions in the production code}
-    \resumeSubItem{Design Patterns}
-      { I use the factory method, Builder, Observer and Strategy patterns most regularly}
-    \resumeSubItem{Languages}
-      {Java (Spring, Hibernate, RxJava), Kotlin (ktor, http4k), Javascript(AngularJS, node.JS), Python \& Bash (for scripting).}
+    \resumeItem{BDD}
+      {Prefer to write service-level black-box tests to identify requirement gaps early.}
+    \resumeItem{TDD}
+      {Follow the cycle: Write test, make it fail, write code to pass, refactor.}
+    \resumeItemListStart
+      \item Fast feedback and comprehensive regression tests
+      \item Influences internal design
+      \item Keeps code focused and concise
+      \item Unit testing abstractions helps decouple tests from implementation, making refactoring easier and enforcing cleaner abstractions in the production code
+    \resumeItemListEnd
+    \resumeItem{Design Patterns}
+      {Regularly use Factory Method, Builder, Observer, and Strategy patterns.}
+    \resumeItem{Languages}
+      {Java (Spring, Hibernate, RxJava), Kotlin (ktor, http4k), JavaScript (AngularJS, Node.js), Python, Bash.}
   \resumeSubHeadingListEnd
+
 %--------DEVOPS------------
 \section{DevOps}
   \resumeSubHeadingListStart
-      \resumeSubItem{The need for distributed system design}
-      { Building in a container is portable and reproduces the CI environments.
-        Runtime dependencies a database instance, MQ, LocalStack, etc can be hosted in a container for any testing. }
-    \resumeSubItem{Execute the build on your machine as reasonably possible}
-      { shift left when running build stages - lint, run unit, integration and BDD tests with the aid of containerised dependencies, run security scans, and static code analysis, maybe even performance tests.  Build and push the image to CI alongside config. }
-    \resumeSubItem{Internal Developer Platforms (IDP)}
-      { Reduce App team workload. Enforce standardised, good practices, reduce duplication of work, reduce the cognitive load on the App team }
-   \item{
-     \textbf{Languages}{: Python, Bash, Java, Groovy}
-     \hfill
-     \textbf{Technologies}{: AWS, Terraform, Docker, Kubernetes, GitHub Actions}
-   }
- \resumeSubHeadingListEnd
+    \resumeItem{Containerized Builds}
+      {Build in containers for portability and consistency with CI environments.}
+    \resumeItem{Local Build Stages}
+      {Run as many build stages locally as possible: compilation, linting, unit/integration/service tests, security scans, static analysis, and performance tests.}
+    \resumeItem{Reproducible Environments}
+      {Use containers for local databases, message queues, LocalStack, WireMock, etc., to mirror CI/CD environments.}
+    \resumeItem{Transition to CI/CD}
+      {Once local builds pass, hand off to remote CI for further validation.}
+    \resumeItem{Internal Developer Platforms}
+      {Reduce app team workload and cognitive load by enforcing standardisation and reducing duplication. Not every team can have a specialist for every DevOps tool.}
+    \resumeItem{Technologies}
+      {Python, Bash, Java, Groovy; AWS, Terraform, Docker, Kubernetes, GitHub Actions.}
+  \resumeSubHeadingListEnd
+
 %--------SYSTEM DESIGN------------
 \section{System Design}
   \resumeSubHeadingListStart
-      \resumeSubItem{Why the complexity?}
-      {The system design has to meet the non-functional requirements (NFRs) of an application. IT system outages can cause huge disruption.  If the systems we depend on are so important, they must be: Scalable, Highly available, Reliable, Fault-tolerant}
-      \resumeSubItem{Types of Scaling}
-      {Horizontal scaling: Adding more servers to the system. Systems must maintain performance through horizontal scaling.\newline
-      Vertical scaling: Simpler but limited by CPU and memory of even the most powerful machines.}
-      \resumeSubItem{Databases}
-      {Analysis of data storage and access patterns determines database technology choice:
-        \begin{itemize}
-          \item Relational databases (eg. MySQL): ACID compliant but more complex to scale horizontally
-          \item NoSQL databases: More flexible schema and easier horizontal scaling, but with various trade-offs
-        \end{itemize}}
-      \resumeSubItem{Caching}
-      {There many variants of cache and many places they can be used.  Access patterns and data consistency are considerations.}
-      \resumeSubItem{Load balancers}
-      {Two types exist: L4 LBs are Faster but have less information for forwarding decisions and L7 LBs are Slower but can use client request details in decisions}
-      \resumeSubItem{Message Queues}
-      {Provides two key benefits: Improves performance through asynchronous workload delegation adds system resilience by buffering temporary processing fluctuations and allowing the message to be replayed.}
-      \resumeSubItem{Content Delivery Networks}
-      {Improves performance by serving data from geographically closer servers to users}
-      \resumeSubItem{Pub/Sub}
-      {A single push event to a topic/channel fans out data to multiple consumers}
+    \resumeItem{Non-Functional Requirements}
+      {Design systems to be scalable, highly available, reliable, and fault-tolerant to prevent outages.}
+    \resumeItem{Scaling}
+      {Horizontal: Add more servers to maintain performance. Vertical: Simpler but limited by hardware.}
+    \resumeItem{Databases}
+      {Choose based on data model/access patterns. Relational DBs (e.g., MySQL) are ACID-compliant but harder to scale horizontally; NoSQL offers variants with different trade-offs.}
+    \resumeItem{Caching}
+      {Select cache types and strategies based on access patterns and consistency needs.}
+    \resumeItem{Load Balancers}
+      {L4: Faster, less information; L7: Slower, more request detail.}
+    \resumeItem{Message Queues}
+      {Improve performance via async delegation and add resilience by buffering and replaying messages.}
+    \resumeItem{Pub/Sub}
+      {Push events to a topic/channel to fan out data to multiple consumers.}
   \resumeSubHeadingListEnd
 \end{document}
