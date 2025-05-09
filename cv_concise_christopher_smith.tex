@@ -62,6 +62,12 @@
     \end{tabular*}\vspace{-8pt}
 }
 
+\newcommand{\cert}[3]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small{\textbf{#1} (#2)} & \small{#3}
+    \end{tabular*}
+}
+
 \newcommand{\resumeSubItem}[1]{\item\small{#1}\vspace{-1pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -82,9 +88,10 @@
 \end{tabular*}
 
 %----------SUMMARY-----------------
+
 \section*{Summary}
-\small Versatile software engineer with over 11 years of experience developing applications used by millions. Passionate about automation and delivering high-quality, well-tested solutions.\\
-\textbf{Skills:} AWS, Terraform, CI/CD, Java, GitHub Actions, Jenkins, Vert.x, AngularJS, GraphQL, BDD, Redis, Microservices, System Design, Cloud Architecture, IaC
+\paragraph\small Senior Software Engineer with over 11 years of experience developing applications used by millions. Passionate about automation and delivering high-quality, well-tested solutions
+\paragraph\small Skills/Tech: Backend Software Development (Java, Kotlin, TTD/BDD, Test Containers), Linux, Cloud/Infrastructure (AWS, Networking, Containerisation, Kubernetes), System Design (Scaling, Availability, Fault-tolerance), CI/CD (GitHub Actions, Jenkins), Observability (ELK, Splunk, New Relic)
 
 %-----------EXPERIENCE-----------------
 \section{Experience}
@@ -99,9 +106,9 @@
     \resumeItemListEnd
     \resumeSubheading{Ford UK}{London, UK}{Full stack engineer}{Aug 2021 - Sep 2022}
       \resumeItemListStart
-        \resumeItem{Advocated and montored others in managing tech debt with clean code and increment refactoring}
+        \resumeItem{Advocated and mentored others in managing tech debt with clean code and increment refactoring}
         \resumeItem{Planned and implemented BDD testing of a service prior to remote CI}
-        \resumeItem{Persuaded management and worked alongside another engineer to implement a graphQL API}
+        \resumeItem{Convinced the team and worked alongside another engineer to implement a GraphQL API}
       \resumeItemListEnd
       \resumeSubheading{Career break}{Manchester, UK}{Caring for family members}{Sep 2020 - Aug 2021}
       \resumeSubheading{Sky}{London, UK}{Senior Software Engineer}{Mar 2020 - Sep 2020}
@@ -128,13 +135,13 @@
       \resumeSubheading{British Airways}{London, UK}{Junior Software Engineer}{Mar 2014 - Mar 2014}
       \resumeItemListStart
         \resumeItem{Involved in designing a failover application stack}
-        \resumeItem{Implmented widgets and features using AngularJS, Java and Redis}
+        \resumeItem{Implemented widgets and features using AngularJS, Java and Redis}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
 %-----------EDUCATION & CERTIFICATION -----------------
 \section{Education \& Certifications}
-        \resumeSubItem{University of Portsmouth, Portsmouth, UK | Master of Pharmacy (2:2) | Oct 2003 - Jun 2008}
-        \resumeSubItem{AWS Certified Advanced Networking - Specialty (In Progress)}
-        \resumeSubItem{OCP Java SE 8 Programmer II | \small Credential ID OC1671391 - Oracle | 2017}
-        \resumeSubItem{AWS Certified Solution Architect Associate | \small AWS | 2016}
+\cert{Master of Pharmacy}{University of Portsmouth}{\textit{2:2, Jun 2008}}
+\cert{AWS Certified Advanced Networking - Specialty}{AWS}{\textit{Exam in 09/2025}}
+\cert{OCP Java SE 8 Programmer II}{Oracle}{\textit{ID:OC1671391, 2017}}
+\cert{AWS Certified Solution Architect Associate}{AWS}{\textit{2016}}
 \end{document}
